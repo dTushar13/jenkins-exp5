@@ -4,6 +4,7 @@ pipeline{
 		stage("build"){
 			steps {
 				sh """
+					python manage.py migrate
 					docker build . -t django-proj
 				"""
 			}
