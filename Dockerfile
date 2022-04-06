@@ -13,14 +13,14 @@ pipeline{
     stage("build"){
       steps {
         sh """
-          docker build . -t jenkins-django
+          docker build . -t dtushar01/exp5
         """
       }
     }
     stage("run"){
       steps {
         sh """
-          docker run -p 8001:8000 -it --rm django-dev
+          docker run -p 8001:8000 -it --rm dtushar01/exp5
         """
       }
     }
