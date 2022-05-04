@@ -8,12 +8,19 @@ pipeline{
 				"""
 			}
 		}
-		stage("run"){
+		stage("push"){
 			steps {
 				sh """
-					docker run -p 8000:8000 -i --rm django-proj
+					docker push dtushar/devops-exp
 				"""
 			}
 		}
+// 		stage("run"){
+// 			steps {
+// 				sh """
+// 					docker run -p 8000:8000 -i --rm django-proj
+// 				"""
+// 			}
+// 		}
 	}
 }
