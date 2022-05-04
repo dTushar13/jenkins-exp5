@@ -8,13 +8,13 @@ pipeline{
 				"""
 			}
 		}
-		stage("push"){
-			steps {
-				sh """
-					docker push dtushar/devops-exp
-				"""
-			}
-		}
+// 		stage("push"){
+// 			steps {
+// 				sh """
+// 					docker push dtushar/devops-exp
+// 				"""
+// 			}
+// 		}
 		stage("run"){
 			steps {
 				sh """
