@@ -15,12 +15,12 @@ pipeline{
 				"""
 			}
 		}
-// 		stage("run"){
-// 			steps {
-// 				sh """
-// 					docker run -p 8000:8000 -i --rm django-proj
-// 				"""
-// 			}
-// 		}
+		stage("run"){
+			steps {
+				sh """
+					docker run -p 8000:8000 -i --rm django-proj
+				"""
+			}
+		}
 	}
 }
